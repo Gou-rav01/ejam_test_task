@@ -1,0 +1,11 @@
+.main-wrapper {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .main-container {
+    height: 100%;
+    width: 100%;
+  }
+}

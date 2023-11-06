@@ -1,0 +1,38 @@
+.orderSteps-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  .orderSteps-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .orderSteps-item-title {
+      font-weight: 400;
+      line-height: 110%;
+    }
+    .orderSteps-item-title-bold {
+      font-weight: 700;
+    }
+
+    .orderSteps-item-status {
+      display: flex;
+      align-items: center;
+    }
+
+    .orderSteps-inProgress {
+      background: #2c7ef8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .orderSteps-pending {
+      border-radius: 50%;
+      border: 2px solid #2c7ef8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

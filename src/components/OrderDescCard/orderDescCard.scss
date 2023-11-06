@@ -1,0 +1,35 @@
+.orderDescCard-wrapper {
+  background: #fafafa;
+  padding: 40px;
+  margin-bottom: 50px;
+
+  @media (max-width: 767px) {
+    background: none;
+  }
+
+  .orderDescCard-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .orderDescCard-column-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .orderDescCard-detail-section {
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    .orderDescCard-discount-section {
+      order: 1;
+    }
+    .orderDescCard-column-1 {
+      order: 2;
+    }
+    .orderDescCard-detail-section {
+      order: 3;
+    }
+  }
+}

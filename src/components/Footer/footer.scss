@@ -1,0 +1,45 @@
+.footer {
+  background-color: #252f3d;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+
+  .copyright-text {
+    display: flex;
+    padding: 8px 0px;
+    align-items: center;
+    gap: 16px;
+
+    .copyright-subtext1 {
+      text-transform: capitalize;
+    }
+    .copyright-subtext2 {
+      text-transform: lowercase;
+    }
+  }
+
+  .ssl-encryption {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .ssl-encryption-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.footer-content p {
+  margin: 0;
+}

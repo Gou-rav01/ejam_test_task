@@ -1,0 +1,12 @@
+.orderStatus-wrapper {
+  text-align: center;
+  .orderStatus-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    .orderStatus-subtitle {
+      color: #4d5254;
+    }
+  }
+}

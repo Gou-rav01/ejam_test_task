@@ -1,0 +1,47 @@
+.featureCarousal-wrapper {
+  background: #252f3d;
+  display: flex;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .featureCarousal-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .featureCarousal-list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .featureCarousal-list-icon {
+      height: 22px;
+      width: 22px;
+    }
+  }
+}
+.featureCarousal-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/* For IE, Edge and Firefox */
+.featureCarousal-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media (max-width: 767px) {
+  .featureCarousal-wrapper {
+    overflow: scroll;
+    justify-content: unset;
+    .featureCarousal-list {
+      justify-content: center;
+      min-width: 100%;
+    }
+  }
+}
