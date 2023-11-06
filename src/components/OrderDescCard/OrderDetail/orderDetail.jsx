@@ -22,7 +22,7 @@ const OrderDetail = () => {
     <div className="orderDetail-wrapper">
       <div className="orderDetail-desc gap-4 lg:gap-6">
         <div className="w-20 h-20 lg:w-32 lg:h-32 flex-shrink-0">
-          <img src={ProdImg} alt="Product Image" height="100%" width="100%" />
+          <img src={ProdImg} alt="Product" height="100%" width="100%" />
         </div>
         <div className="orderDetail-desc-body gap-3 lg:gap-2">
           <div className="orderDetail-desc-body-title">
