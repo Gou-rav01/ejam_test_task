@@ -35,6 +35,21 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.featureCarousal-wrapper-mobile {
+  background: #252f3d;
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+  gap: 8px;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 100%;
+  text-transform: capitalize;
+  align-items: center;
+}
 @media (max-width: 767px) {
   .featureCarousal-wrapper {
     overflow: scroll;

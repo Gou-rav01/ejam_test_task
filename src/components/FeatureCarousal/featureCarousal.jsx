@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState } from "react";
 import "./featureCarousal.scss";
 import Checkmark from "../../assets/images/checkmark_starburst.svg";
 import Truck from "../../assets/images/truck_light.svg";
@@ -8,7 +8,6 @@ import ChevronLeft from "../../assets/images/chevron_left.svg";
 import ChevronRight from "../../assets/images/chevron_right.svg";
 
 function FeatureCarousal() {
-  const containerRef = useRef();
   const features = [
     {
       title: "30-DAY SATISFACTION GUARANTEE",
@@ -28,26 +27,22 @@ function FeatureCarousal() {
     },
   ];
 
+  const [currentFeature, setCurrentFeature] = useState(0);
+
   const scrollLeft = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollBy({
-        left: -360,
-        behavior: "smooth",
-      });
+    if (currentFeature > 0) {
+      setCurrentFeature((prevState) => prevState - 1);
     }
   };
   const scrollRight = () => {
-    if (containerRef.current) {
-      containerRef.current.scrollBy({
-        left: 360,
-        behavior: "smooth",
-      });
+    if (currentFeature < features.length - 1) {
+      setCurrentFeature((prevState) => prevState + 1);
     }
   };
 
   return (
     <React.Fragment>
-      <div className="block md:hidden absolute inset-0 top-4 pl-4">
+      <div className="block md:hidden absolute inset-0 top-3 pl-4">
         <img
           src={ChevronLeft}
           alt="ChevronLeft"
@@ -58,7 +53,18 @@ function FeatureCarousal() {
           }}
         />
       </div>
-      <div ref={containerRef} className="featureCarousal-wrapper">
+      <div className="flex lg:hidden featureCarousal-wrapper-mobile">
+        <div className="">
+          <img
+            src={features[currentFeature].icon}
+            alt={features[currentFeature].icon}
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <div>{features[currentFeature].title}</div>
+      </div>
+      <div className="featureCarousal-wrapper hidden lg:flex">
         {features.map((feature, i) => (
           <div key={i} className="featureCarousal-list">
             <div className="featureCarousal-list-icon">
@@ -73,7 +79,7 @@ function FeatureCarousal() {
           </div>
         ))}
       </div>
-      <div className="block md:hidden absolute right-0 top-4 pr-4">
+      <div className="block md:hidden absolute right-0 top-3 pr-4">
         <img
           src={ChevronRight}
           alt="ChevronRight"
