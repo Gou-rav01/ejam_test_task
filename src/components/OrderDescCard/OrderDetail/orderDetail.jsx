@@ -49,13 +49,13 @@ const OrderDetail = () => {
             </div>
             12 left in Stock
           </div>
-          <div className="md:block hidden product-instruction-text text-base">
+          <div className="lg:block hidden product-instruction-text text-base">
             Simply plug a Clarifion into any standard outlet and replace bulky,
             expensive air purifiers with a simple.
           </div>
         </div>
       </div>
-      <div className="md:hidden block product-instruction-text text-xs text-center">
+      <div className="lg:hidden block product-instruction-text text-xs text-center">
         Simply plug a Clarifion into any standard outlet and replace bulky,
         expensive air purifiers with a simple.
       </div>
@@ -116,7 +116,7 @@ const OrderDetail = () => {
           </div>
         </div>
 
-        <div className="shippingDetail lg:flex-nowrap flex-wrap sm:justify-between justify-around p-2 lg:py-2 lg:px-4">
+        <div className="shippingDetail lg:flex-nowrap md:flex-nowrap flex-wrap justify-evenly p-2 lg:py-2 lg:px-4">
           <div className="">Free shipping</div>
           <div className="flex gap-2 align-middle h-[16px] border-l border-[#cfcfcf]"></div>
           <div className="flex gap-2 align-middle">
@@ -125,8 +125,8 @@ const OrderDetail = () => {
             </div>
             Secure 256-bit SSL encryption
           </div>
-          <div className="flex gap-2 align-middle h-[16px] border-l border-[#cfcfcf] hidden lg:block"></div>
-          <div className="md:w-auto w-full text-center flex flex-wrap justify-center paycard">
+          <div className="flex gap-2 align-middle h-[16px] border-l border-[#cfcfcf] hidden lg:block md:block"></div>
+          <div className="md:w-auto lg:w-auto w-full text-center flex flex-wrap justify-center paycard">
             <img
               className="payment-logo"
               src={Visa}

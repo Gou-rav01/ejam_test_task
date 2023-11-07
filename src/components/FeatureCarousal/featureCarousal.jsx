@@ -42,7 +42,7 @@ function FeatureCarousal() {
 
   return (
     <React.Fragment>
-      <div className="block md:hidden absolute inset-0 top-3 pl-4">
+      <div className="block lg:hidden absolute inset-0 top-3 pl-4">
         <img
           src={ChevronLeft}
           alt="ChevronLeft"
@@ -79,7 +79,7 @@ function FeatureCarousal() {
           </div>
         ))}
       </div>
-      <div className="block md:hidden absolute right-0 top-3 pr-4">
+      <div className="block lg:hidden absolute right-0 top-3 pr-4">
         <img
           src={ChevronRight}
           alt="ChevronRight"

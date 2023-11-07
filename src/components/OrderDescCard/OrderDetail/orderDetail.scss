@@ -151,7 +151,6 @@
       border-radius: 4px;
       border: 1px solid #cfcfcf;
       display: flex;
-      // justify-content: center;
       align-items: center;
       gap: 10px;
       color: #4d5254;
@@ -160,9 +159,6 @@
       font-weight: 400;
       line-height: 140%; /* 16.8px */
       text-transform: capitalize;
-      @media (max-width: 767px) {
-        justify-content: center;
-      }
 
       .secure-icon {
         width: 12px;
